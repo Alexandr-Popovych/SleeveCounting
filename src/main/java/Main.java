@@ -33,8 +33,8 @@ public class Main {
         EPrinter.print(name, quantity);//друкуємо прочитане у вигляді списку
 
 
-        String sleeveSize[] = {"16", "20", "25", "32"};
-        double sleeveQuantity[] = new double[4];
+        String[] sleeveSize = {"16", "20", "25", "32"};
+        double[] sleeveQuantity = new double[4];
         SleeveCounting.count(name, quantity, sleeveSize, sleeveQuantity);
         EPrinter.print(sleeveQuantity);
         double countSumm;

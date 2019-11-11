@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
 
         System.out.println("Введіть номер закладки в листі MS Excell");
-        int sheet = scanner.nextInt();
+        //int sheet = scanner.nextInt();
         System.out.println("Введіть початковий номер рядка з фітінгами");
         int first = scanner.nextInt();
         System.out.println("Введіть останній номер рядка з фітінгами");

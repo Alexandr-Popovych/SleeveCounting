@@ -8,7 +8,10 @@ import java.awt.event.ActionListener;
 public class MyGui extends JFrame {
     private JButton button = new JButton("Press");
     private JTextField input = new JTextField("", 5);
-    private JLabel label = new JLabel("Input: ");
+    private JLabel scheet = new JLabel("Введіть номеер закладки: ");
+    private JLabel first = new JLabel("Введіть початковий номер поля: ");
+    private JLabel last = new JLabel("Введіть кінцевий номер поля: ");
+
     private JRadioButton radio1 = new JRadioButton("Select this: ");
     private JRadioButton radio2 = new JRadioButton("Select that: ");
     private JCheckBox check = new JCheckBox("Check", false);
@@ -20,8 +23,16 @@ public class MyGui extends JFrame {
 
         Container container = this.getContentPane();
         container.setLayout(new GridLayout(3, 2, 2, 2));
-        container.add(label);
+        container.add(scheet);
         container.add(input);
+        container.setLayout(new GridLayout(10, 2, 2, 2));
+        container.add(first);
+        container.add(input);
+        container.setLayout(new GridLayout(20, 2, 2, 2));
+        container.add(last);
+        container.add(input);
+
+
         ButtonGroup group = new ButtonGroup();
         group.add(radio1);
         group.add(radio2);

@@ -1,3 +1,4 @@
+import Gui.MyGui;
 import Services.EPrinter;
 import Services.EReader;
 import Services.FileChooser;
@@ -15,6 +16,8 @@ public class Main {
 
         String way;
         way = FileChooser.fileChoose();
+        MyGui app = new MyGui();
+        app.setVisible(true);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         System.out.println("Введіть номер закладки в листі MS Excell");
         System.out.println("Введіть початковий номер рядка з фітінгами");

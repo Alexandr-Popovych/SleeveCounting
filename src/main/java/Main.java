@@ -1,5 +1,6 @@
 import Services.EPrinter;
 import Services.EReader;
+import Services.FileChooser;
 import Services.SleeveCounting;
 
 import java.io.IOException;
@@ -9,14 +10,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        // MyGui app = new MyGui();
-        //app.setVisible(true);
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введіть розташування файлу");
 
-        //String way = scanner.nextLine();
-        String way = "C:\\Users\\User\\Google Диск\\19-00_Лосенко\\19-11-779-Провулок Токучаєвський\\19-11-763-ЕП\\02_19-11-763-Wather System\\02_19-11-763-Ws Specification.xls";
+        String way;
+        way = FileChooser.fileChoose();
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
 
         System.out.println("Введіть номер закладки в листі MS Excell");

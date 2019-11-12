@@ -16,9 +16,7 @@ public class Main {
         String way;
         way = FileChooser.fileChoose();
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
-
         System.out.println("Введіть номер закладки в листі MS Excell");
-        //int sheet = scanner.nextInt();
         System.out.println("Введіть початковий номер рядка з фітінгами");
         int first = scanner.nextInt();
         System.out.println("Введіть останній номер рядка з фітінгами");
@@ -27,8 +25,8 @@ public class Main {
         String[] name = new String[delta];
         double[] quantity = new double[delta];
 
-        EReader.read(way, delta, name, quantity, first);//читаємо з файлу фітінги
-        EPrinter.print(name, quantity);//друкуємо прочитане у вигляді списку
+        EReader.read(way, delta, name, quantity, first);
+        EPrinter.print(name, quantity);
 
 
         String[] sleeveSize = {"16", "20", "25", "32"};

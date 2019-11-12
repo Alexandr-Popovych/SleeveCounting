@@ -34,7 +34,6 @@ public class Main {
         String[] sleeveSize = {"16", "20", "25", "32"};
         double[] sleeveQuantity = new double[4];
         SleeveCounting.count(name, quantity, sleeveSize, sleeveQuantity);
-        EPrinter.print(sleeveQuantity);
         double countSumm;
         countSumm = SleeveCounting.getCountSumm(sleeveQuantity);
         EPrinter.printSleeveSizeQuantity(sleeveSize, sleeveQuantity);

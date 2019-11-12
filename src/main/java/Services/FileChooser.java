@@ -7,7 +7,7 @@ public class FileChooser {
     public static String fileChoose() {
         JButton open = new JButton();
         JFileChooser fc = new JFileChooser();
-        fc.setCurrentDirectory(new java.io.File("C:\\Users\\User\\Dropbox (Work)"));
+        fc.setCurrentDirectory(new java.io.File("C:\\Users\\User\\Dropbox (Work)\\04_Проекти\\04_Проекти 2019"));
         fc.setDialogTitle("Hello world");
         fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
         if (fc.showOpenDialog(open) == JFileChooser.APPROVE_OPTION) {

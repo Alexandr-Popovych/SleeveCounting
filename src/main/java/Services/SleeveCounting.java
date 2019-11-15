@@ -12,13 +12,13 @@ public class SleeveCounting {
             subStr = name[i].split(delimeter);
             for (int j = 0; j < subStr.length; j++) {
                 if (sleeveSize[0].equals(subStr[j])) {
-                    sleeveQuantity[0] = sleeveQuantity[0] + quantity[j];
+                    sleeveQuantity[0] = sleeveQuantity[0] + quantity[i];
                 } else if (sleeveSize[1].equals(subStr[j])) {
-                    sleeveQuantity[1] = sleeveQuantity[1] + quantity[j];
+                    sleeveQuantity[1] = sleeveQuantity[1] + quantity[i];
                 } else if (sleeveSize[2].equals(subStr[j])) {
-                    sleeveQuantity[2] = sleeveQuantity[2] + quantity[j];
+                    sleeveQuantity[2] = sleeveQuantity[2] + quantity[i];
                 } else if (sleeveSize[3].equals(subStr[j])) {
-                    sleeveQuantity[3] = sleeveQuantity[3] + quantity[j];
+                    sleeveQuantity[3] = sleeveQuantity[3] + quantity[i];
                 }
             }
         }

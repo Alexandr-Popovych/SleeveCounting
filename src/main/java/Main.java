@@ -15,9 +15,10 @@ public class Main {
         System.out.println("Введіть розташування файлу");
 
         String way;
-        way = FileChooser.fileChoose();
-        MyGui app = new MyGui();
-        app.setVisible(true);
+        //  way = FileChooser.fileChoose();
+        way = "C:\\Users\\User\\Dropbox (Work)\\04_Проекти\\04_Проекти 2019\\19-10 (Жовтень)\\19-10-778-Cліпенький\\19-10-778-ЕП\\19-10-778.xls";
+       // MyGui app = new MyGui();
+        //app.setVisible(true);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         System.out.println("Введіть номер закладки в листі MS Excell");
         System.out.println("Введіть початковий номер рядка з фітінгами");

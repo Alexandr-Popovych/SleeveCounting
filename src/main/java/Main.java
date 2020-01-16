@@ -16,8 +16,8 @@ public class Main {
 
         String way;
         //  way = FileChooser.fileChoose();
-        way = "C:\\Users\\User\\Dropbox (Work)\\04_Проекти\\04_Проекти 2019\\19-10 (Жовтень)\\19-10-778-Cліпенький\\19-10-778-ЕП\\19-10-778.xls";
-       // MyGui app = new MyGui();
+        way = "C:\\Dropbox (Work)\\01_Проекти 2020\\00_Temps\\19-09-772-Засядь Вовк\\19-09-772-ЕП\\03_NEWER\\19-09-772.xls";
+        // MyGui app = new MyGui();
         //app.setVisible(true);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         System.out.println("Введіть номер закладки в листі MS Excell");
@@ -36,9 +36,9 @@ public class Main {
         String[] sleeveSize = {"16", "20", "25", "32"};
         double[] sleeveQuantity = new double[4];
         SleeveCounting.count(name, quantity, sleeveSize, sleeveQuantity);
-        double countSumm;
-        countSumm = SleeveCounting.getCountSumm(sleeveQuantity);
+        double countSum;
+        countSum = SleeveCounting.getCountSumm(sleeveQuantity);
         EPrinter.printSleeveSizeQuantity(sleeveSize, sleeveQuantity);
-        EPrinter.printSumm(countSumm);
+        EPrinter.printSumm(countSum);
     }
 }

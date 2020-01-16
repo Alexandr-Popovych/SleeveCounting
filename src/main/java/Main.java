@@ -20,11 +20,15 @@ public class Main {
         // MyGui app = new MyGui();
         //app.setVisible(true);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
+        EPrinter.dashLineprint();
         System.out.println("Введіть номер закладки в листі MS Excell");
+        EPrinter.dashLineprint();
         System.out.println("Введіть початковий номер рядка з фітінгами");
         int first = scanner.nextInt();
+        EPrinter.dashLineprint();
         System.out.println("Введіть останній номер рядка з фітінгами");
         int last = scanner.nextInt();
+        EPrinter.dashLineprint();
         int delta = last - first + 1;
         String[] name = new String[delta];
         double[] quantity = new double[delta];
@@ -38,7 +42,9 @@ public class Main {
         SleeveCounting.count(name, quantity, sleeveSize, sleeveQuantity);
         double countSum;
         countSum = SleeveCounting.getCountSumm(sleeveQuantity);
-        EPrinter.printSleeveSizeQuantity(sleeveSize, sleeveQuantity);
-        EPrinter.printSumm(countSum);
+
+        EPrinter.printSleeveSizeQuantity(sleeveSize, sleeveQuantity);//
+
+        EPrinter.printSumm(countSum);//
     }
 }

@@ -43,8 +43,8 @@ public class Main {
         double countSum;
         countSum = SleeveCounting.getCountSumm(sleeveQuantity);
 
-        EPrinter.printSleeveSizeQuantity(sleeveSize, sleeveQuantity);//
+        EPrinter.printSleeveSizeQuantity(sleeveSize, sleeveQuantity);
 
-        EPrinter.printSumm(countSum);//
+        EPrinter.printSumm(countSum);
     }
 }

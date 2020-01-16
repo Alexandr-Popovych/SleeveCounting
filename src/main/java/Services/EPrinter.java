@@ -8,9 +8,9 @@ public class EPrinter {
         }
     }
 
-    public static void printSleeveSizeQuantity(String[] sleeveSize, double[] sleveQuantityty) {
+    public static void printSleeveSizeQuantity(String[] sleeveSize, double[] sleeveQuantify) {
         for (int i = 0; i < sleeveSize.length; i++) {
-            System.out.println("Кількість гільз " + sleeveSize[i] + " складає " + sleveQuantityty[i] + " шт.");
+            System.out.println("Кількість гільз " + sleeveSize[i] + " складає " + sleeveQuantify[i] + " шт.");
         }
     }
 

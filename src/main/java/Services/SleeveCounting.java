@@ -2,12 +2,12 @@ package Services;
 
 public class SleeveCounting {
 
-    public static void count(String[] name, double[] quantity, String[] sleeveSize, double[] sleeveQuantity) {
+    public static void count(String[] designation, double[] quantity, String[] sleeveSize, double[] sleeveQuantity) {
 
-        for (int i = 0; i < name.length; i++) {
+        for (int i = 0; i < designation.length; i++) {
             String delimeter = " - ";
             String[] subStr;
-            subStr = name[i].split(delimeter);
+            subStr = designation[i].split(delimeter);
             for (int j = 0; j < subStr.length; j++) {
                 if (sleeveSize[0].equals(subStr[j])) {
                     sleeveQuantity[0] = sleeveQuantity[0] + quantity[i];

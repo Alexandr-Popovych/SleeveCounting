@@ -10,7 +10,8 @@ public class EPrinter {
                 num++;
             } else {
                 dashLineprint();
-                System.out.println(name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
+                System.out.println((name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт."));
+                dashLineprint();
             }
         }
         dashLineprint();

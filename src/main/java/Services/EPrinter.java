@@ -4,7 +4,13 @@ public class EPrinter {
 
     public static void print(String[] name, String[] designation, double[] quantity) {
         for (int i = 0; i < name.length; i++) {
-            System.out.println(i + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
+
+            if (designation[i] != null) {
+                System.out.println(i + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
+            } else {
+                System.out.println(i + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
+                dashLineprint();
+            }
         }
         dashLineprint();
     }
@@ -27,6 +33,6 @@ public class EPrinter {
     }
 
     public static void dashLineprint() {
-        System.out.println("-----------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------");
     }
 }

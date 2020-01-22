@@ -3,13 +3,14 @@ package Services;
 public class EPrinter {
 
     public static void print(String[] name, String[] designation, double[] quantity) {
+        int num = 0;
         for (int i = 0; i < name.length; i++) {
-
-            if (designation[i] != null) {
-                System.out.println(i + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
+            if (designation[i].equals("") == false) {
+                System.out.println(num + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
+                num++;
             } else {
-                System.out.println(i + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
                 dashLineprint();
+                System.out.println(name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
             }
         }
         dashLineprint();

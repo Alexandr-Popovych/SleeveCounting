@@ -2,9 +2,9 @@ package Services;
 
 public class EPrinter {
 
-    public static void print(String[] name, double[] quantity) {
+    public static void print(String[] name, String[] designation, double[] quantity) {
         for (int i = 0; i < name.length; i++) {
-            System.out.println(i + 1 + ". " + name[i] + ", кількіттю " + quantity[i] + " шт.");
+            System.out.println(i + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
         }
         dashLineprint();
     }

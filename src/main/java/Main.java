@@ -30,11 +30,13 @@ public class Main {
         int last = scanner.nextInt();
         EPrinter.dashLineprint();
         int delta = last - first + 1;
+
         String[] name = new String[delta];
+        String[] designation = new String[delta];
         double[] quantity = new double[delta];
 
-        EReader.read(way, name, quantity, first);
-        EPrinter.print(name, quantity);
+        EReader.read(way, name, designation, quantity, first);
+        EPrinter.print(name, designation, quantity);
 
 
         String[] sleeveSize = {"16", "20", "25", "32"};

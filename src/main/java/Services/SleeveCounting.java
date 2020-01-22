@@ -1,7 +1,5 @@
 package Services;
 
-import java.util.Arrays;
-
 public class SleeveCounting {
 
     public static void count(String[] name, double[] quantity, String[] sleeveSize, double[] sleeveQuantity) {

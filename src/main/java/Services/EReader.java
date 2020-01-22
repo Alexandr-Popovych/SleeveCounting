@@ -8,7 +8,7 @@ import java.io.IOException;
 
 
 public class EReader {
-    public static void read(String way, double delta, String[] name, double[] quantity, int first) throws IOException {
+    public static void read(String way, String[] name, double[] quantity, int first) throws IOException {
         FileInputStream fis = new FileInputStream(way);
         Workbook wb = new HSSFWorkbook(fis);
         for (int i = 0; i < name.length; i++) {

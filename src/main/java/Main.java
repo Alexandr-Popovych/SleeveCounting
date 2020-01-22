@@ -33,7 +33,7 @@ public class Main {
         String[] name = new String[delta];
         double[] quantity = new double[delta];
 
-        EReader.read(way, delta, name, quantity, first);
+        EReader.read(way, name, quantity, first);
         EPrinter.print(name, quantity);
 
 

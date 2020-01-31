@@ -3,6 +3,7 @@ package Services;
 public class EPrinter {
 
     public static void print(String[] name, String[] designation, double[] quantity) {
+
         int num = 0;
         for (int i = 0; i < name.length; i++) {
             if (designation[i].equals("") == false) {

@@ -16,7 +16,7 @@ public class Main {
 
         String way;
         //  way = FileChooser.fileChoose();
-        way = "C:\\Dropbox (Work)\\01_Проекти 2020\\00_Temps\\19-10-757-Паскарь\\19-10-757-ЕП\\03_19-10-757-СО\\02_Cooling system specification-757.xls";
+        way = "C:\\Dropbox (Work)\\01_Проекти 2020\\02_Лютий\\20-02-783-Бондарець\\20-02-783-ЕП\\20-02-783-OV.xls";
         // MyGui app = new MyGui();
         //app.setVisible(true);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");

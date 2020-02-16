@@ -18,4 +18,14 @@ public class EReader {
         }
         fis.close();
     }
+
+    public static void read(String way, String[] name, String designation[],int first) throws IOException {
+        FileInputStream fis = new FileInputStream(way);
+        Workbook wb = new HSSFWorkbook(fis);
+        for (int i = 0; i < name.length; i++) {
+            name[i] = wb.getSheetAt(0).getRow(i + first - 1).getCell(1).getStringCellValue();
+            designation[i] = wb.getSheetAt(0).getRow(i + first - 1).getCell(2).getStringCellValue();
+        }
+        fis.close();
+    }
 }

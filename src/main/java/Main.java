@@ -19,25 +19,24 @@ public class Main {
         way = "C:\\Dropbox (Work)\\01_Проекти 2020\\02_Лютий\\20-02-783-Бондарець\\20-02-783-ЕП\\20-02-783-OV.xls";
         // MyGui app = new MyGui();
         //app.setVisible(true);
+        EReader.read(way);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         EPrinter.dashLineprint();
         System.out.println("Введіть номер закладки в листі MS Excell");
         EPrinter.dashLineprint();
         System.out.println("Введіть початковий номер рядка з фітінгами");
-        //int first = scanner.nextInt();
+        int first = scanner.nextInt();
         EPrinter.dashLineprint();
-        //System.out.println("Введіть останній номер рядка з фітінгами");
-        //int last = scanner.nextInt();
-        //EPrinter.dashLineprint();
-        //
-        //
-        // int delta = last - first + 1;
+        System.out.println("Введіть останній номер рядка з фітінгами");
+        int last = scanner.nextInt();
+        EPrinter.dashLineprint();
+
+         int delta = last - first + 1;
+
 
         String[] name = new String[delta];
         String[] designation = new String[delta];
         double[] quantity = new double[delta];
-
-        EReader.read(way, name, designation);
 
 
         EReader.read(way, name, designation, quantity, first);

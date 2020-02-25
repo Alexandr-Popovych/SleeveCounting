@@ -16,10 +16,10 @@ public class Main {
 
         String way;
         //  way = FileChooser.fileChoose();
-        way = "C:\\Dropbox (Work)\\01_Проекти 2020\\02_Лютий\\20-02-783-Бондарець\\20-02-783-ЕП\\20-02-783-OV.xls";
+        way = "D:\\Dropbox (Work)\\01_Проекти 2020\\02_Лютий\\20-02-787-Сухарев Дмитрий, Хлепча\\20-02-787-ЕП\\3_20-02-787.xls";
         // MyGui app = new MyGui();
         //app.setVisible(true);
-        EReader.read(way);
+        //EReader.read(way);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         EPrinter.dashLineprint();
         System.out.println("Введіть номер закладки в листі MS Excell");

@@ -16,7 +16,7 @@ public class Main {
 
         String way;
         //  way = FileChooser.fileChoose();
-        way = "D:\\Dropbox (Work)\\01_Проекти 2020\\02_Лютий\\20-02-787-Сухарев Дмитрий, Хлепча\\20-02-787-ЕП\\3_20-02-787.xls";
+        way = "D:\\GoogleDrive\\01_Проекти 2020\\02_Лютий\\20-02-782-Засядьвовк, Осокорки\\20-02-782-ЕП\\02_20-02-782.xls";
         // MyGui app = new MyGui();
         //app.setVisible(true);
         //EReader.read(way);

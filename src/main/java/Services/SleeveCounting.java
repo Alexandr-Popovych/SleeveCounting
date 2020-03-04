@@ -5,7 +5,7 @@ public class SleeveCounting {
     public static void count(String[] designation, double[] quantity, String[] sleeveSize, double[] sleeveQuantity) {
 
         for (int i = 0; i < designation.length; i++) {
-            String delimeter = " - ";
+            String delimeter = "-";
             String[] subStr;
             subStr = designation[i].split(delimeter);
             for (int j = 0; j < subStr.length; j++) {

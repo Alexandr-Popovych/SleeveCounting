@@ -15,8 +15,8 @@ public class Main {
         System.out.println("Введіть розташування файлу");
 
         String way;
-        //  way = FileChooser.fileChoose();
-        way = "D:\\GoogleDrive\\01_Проекти 2020\\02_Лютий\\20-02-782-Засядьвовк, Осокорки\\20-02-782-ЕП\\02_20-02-782.xls";
+        way = FileChooser.fileChoose();
+       // way = "D:\\GoogleDrive\\01_Проекти 2020\\02_Лютий\\20-02-782-Засядьвовк, Осокорки\\20-02-782-ЕП\\02_20-02-782.xls";
         // MyGui app = new MyGui();
         //app.setVisible(true);
         //EReader.read(way);

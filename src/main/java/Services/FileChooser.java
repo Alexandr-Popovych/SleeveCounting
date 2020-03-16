@@ -7,7 +7,7 @@ public class FileChooser {
     public static String fileChoose() {
         JButton open = new JButton();
         JFileChooser fc = new JFileChooser();
-        fc.setCurrentDirectory(new java.io.File("C:\\"));
+        fc.setCurrentDirectory(new java.io.File("D:\\"));
         fc.setDialogTitle("Знайдіть файл специфікації !!!");
         fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
         if (fc.showOpenDialog(open) == JFileChooser.APPROVE_OPTION) {

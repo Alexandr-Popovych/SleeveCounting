@@ -13,7 +13,6 @@ public class FileChooser {
         fc.setDialogTitle("Знайдіть файл специфікації !!!");
         fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
-
         FileNameExtensionFilter filter = new FileNameExtensionFilter(
                 "Excel", "xls");
         fc.setFileFilter(filter);

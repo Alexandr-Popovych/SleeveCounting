@@ -1,4 +1,3 @@
-import Gui.MyGui;
 import Services.EPrinter;
 import Services.EReader;
 import Services.FileChooser;
@@ -16,8 +15,7 @@ public class Main {
 
         String way;
         way = FileChooser.fileChoose();
-       // way = "D:\\GoogleDrive\\01_Проекти 2020\\02_Лютий\\20-02-782-Засядьвовк, Осокорки\\20-02-782-ЕП\\02_20-02-782.xls";
-        // MyGui app = new MyGui();
+        // way = "D:\\GoogleDrive\\01_Проекти 2020\\02_Лютий\\20-02-782-Засядьвовк, Осокорки\\20-02-782-ЕП\\02_20-02-782.xls";
         //app.setVisible(true);
         //EReader.read(way);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
@@ -31,7 +29,7 @@ public class Main {
         int last = scanner.nextInt();
         EPrinter.dashLineprint();
 
-         int delta = last - first + 1;
+        int delta = last - first + 1;
 
 
         String[] name = new String[delta];

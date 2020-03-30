@@ -10,9 +10,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String way;
         way = FileChooser.fileChoose();
-        // way = "D:\\GoogleDrive\\01_Проекти 2020\\02_Лютий\\20-02-782-Засядьвовк, Осокорки\\20-02-782-ЕП\\02_20-02-782.xls";
-        //app.setVisible(true);
-        //EReader.read(way);
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         EPrinter.dashLineprint();
         System.out.println("Введіть номер закладки в листі MS Excell");

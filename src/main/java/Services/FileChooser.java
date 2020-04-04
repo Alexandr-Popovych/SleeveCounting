@@ -2,7 +2,6 @@ package Services;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -19,7 +18,7 @@ public class FileChooser {
 //        temp = temp.trim();
 //        System.out.println(temp);
         String temp = new String();
-        temp = Temp.tempread();
+        temp = Temp.tempRead();
         JButton open = new JButton();
         JFileChooser fc = new JFileChooser();
         fc.setCurrentDirectory(new java.io.File(temp));

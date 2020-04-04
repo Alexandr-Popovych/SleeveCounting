@@ -8,16 +8,9 @@ import java.io.IOException;
 
 public class Temp {
 
-    public static String tempread() throws IOException {
-        try {
-            FileReader fr = new FileReader("temp.txt");
-        } catch (FileNotFoundException e) {
-            FileWriter fw = new FileWriter("temp.txt");
-            fw.write("C:\\");
-            fw.close();
-            FileReader fr = new FileReader("temp.txt");
-        }
-
+    public static String tempRead() throws IOException {
+        FileReader fr = new FileReader("temp.txt");
+      //  FileWriter fw = new FileWriter("temp.txt");
         char[] tmp = new char[200];
         fr.read(tmp);
         String temp = new String();

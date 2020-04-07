@@ -2,6 +2,7 @@ package Services;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -9,16 +10,14 @@ public class FileChooser {
 
     public static String fileChoose() throws IOException {
 
-//        FileReader fr = new FileReader("temp.txt");
-//        char[] tmp = new char[200];
-//        fr.read(tmp);
-//        String temp = new String();
-//        temp = new String(tmp);
-//        fr.close();
-//        temp = temp.trim();
-//        System.out.println(temp);
+        FileReader fr = new FileReader("temp.txt");
+        char[] tmp = new char[200];
+        fr.read(tmp);
         String temp = new String();
-        temp = Temp.tempRead();
+        temp = new String(tmp);
+        fr.close();
+        temp = temp.trim();
+        System.out.println(temp);
         JButton open = new JButton();
         JFileChooser fc = new JFileChooser();
         fc.setCurrentDirectory(new java.io.File(temp));

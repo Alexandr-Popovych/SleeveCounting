@@ -12,7 +12,7 @@ public class Main {
         way = FileChooser.fileChoose();
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         EPrinter.dashLineprint();
-        System.out.println("Введіть номер закладки в листі MS Excell");
+        System.out.println("Введіть номер закладки в листі MS Excel");
         EPrinter.dashLineprint();
         System.out.println("Введіть початковий номер рядка з фітінгами");
         int first = scanner.nextInt();

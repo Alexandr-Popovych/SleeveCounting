@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SleeveCounting" />
+        <module name="IdeaProjects" />
         <module name="SleeveCountingV2.0" />
       </profile>
     </annotationProcessing>

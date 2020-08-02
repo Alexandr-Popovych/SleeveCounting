@@ -19,6 +19,7 @@ public class EReader {
         fis.close();
     }
 
+//Сорування
     public static void read(String way) throws IOException {
         FileInputStream fis = new FileInputStream(way);
         Workbook wb = new HSSFWorkbook(fis);

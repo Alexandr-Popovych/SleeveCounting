@@ -23,10 +23,11 @@ public class SleeveCounting {
     }
 
     public static double getCountSumm(double[] sleeveQuantity) {
-        double summSleeveQuantity = 0.0;
+        double sumSleeveQuantity;
+        sumSleeveQuantity = 0.0;
         for (double v : sleeveQuantity) {
-            summSleeveQuantity = summSleeveQuantity + v;
+            sumSleeveQuantity += v;
         }
-        return summSleeveQuantity;
+        return sumSleeveQuantity;
     }
 }

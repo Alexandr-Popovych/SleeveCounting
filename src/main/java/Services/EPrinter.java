@@ -5,8 +5,8 @@ public class EPrinter {
     public static void print(String[] name, String[] designation, double[] quantity) {
 
         int num = 0;
-        for (int i = 0; i < name.length; i++) {
-            if (designation[i].equals("") == false) {
+        for (int i = 0; i < name.length; i++)
+            if (!designation[i].equals("")) {
                 System.out.println(num + 1 + ". " + name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт.");
                 num++;
             } else {
@@ -14,7 +14,6 @@ public class EPrinter {
                 System.out.println((name[i] + designation[i] + ", кількіттю " + quantity[i] + " шт."));
                 dashLineprint();
             }
-        }
         dashLineprint();
     }
 

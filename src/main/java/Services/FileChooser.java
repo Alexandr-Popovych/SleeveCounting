@@ -13,7 +13,7 @@ public class FileChooser {
         FileReader fr = new FileReader("temp.txt");
         char[] tmp = new char[200];
         fr.read(tmp);
-        String temp = new String();
+        String temp;
         temp = new String(tmp);
         fr.close();
         temp = temp.trim();

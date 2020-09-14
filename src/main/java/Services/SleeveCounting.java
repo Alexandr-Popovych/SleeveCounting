@@ -5,9 +5,9 @@ public class SleeveCounting {
     public static void count(String[] designation, double[] quantity, String[] sleeveSize, double[] sleeveQuantity) {
 
         for (int i = 0; i < designation.length; i++) {
-            String delimeter = "-";
+            String delimiter = "-";
             String[] subStr;
-            subStr = designation[i].split(delimeter);
+            subStr = designation[i].split(delimiter);
             for (int j = 0; j < subStr.length; j++) {
                 if (sleeveSize[0].equals(subStr[j]) | (" " + sleeveSize[0] + " ").equals(subStr[j]) | (" " + sleeveSize[0] + "").equals(subStr[j]) | ("" + sleeveSize[0] + " ").equals(subStr[j])) {
                     sleeveQuantity[0] = sleeveQuantity[0] + quantity[i];

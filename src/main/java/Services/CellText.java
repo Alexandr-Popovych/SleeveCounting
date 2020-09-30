@@ -21,7 +21,7 @@ public class CellText {
                 result = Boolean.toString(cell.getBooleanCellValue());
                 break;
             case FORMULA:
-                result = cell.getCellFormula().toString();
+                result = cell.getCellFormula();
                 break;
             default:
                 break;

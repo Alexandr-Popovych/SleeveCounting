@@ -7,7 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class EScanner {
-    public static void scan(String way, String[] name, String designation[], double[] quantity, int first) throws IOException {
+    public static void scan(String way, String[] name, String[] designation, double[] quantity, int first) throws IOException {
         FileInputStream fis = new FileInputStream(way);
         Workbook wb = new HSSFWorkbook(fis);
         for (int i = 0; i < name.length; i++) {

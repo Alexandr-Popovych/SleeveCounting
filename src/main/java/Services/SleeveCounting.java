@@ -8,14 +8,14 @@ public class SleeveCounting {
             String delimiter = "-";
             String[] subStr;
             subStr = designation[i].split(delimiter);
-            for (int j = 0; j < subStr.length; j++) {
-                if (sleeveSize[0].equals(subStr[j]) | (" " + sleeveSize[0] + " ").equals(subStr[j]) | (" " + sleeveSize[0] + "").equals(subStr[j]) | ("" + sleeveSize[0] + " ").equals(subStr[j])) {
+            for (String s : subStr) {
+                if (sleeveSize[0].equals(s) | (" " + sleeveSize[0] + " ").equals(s) | (" " + sleeveSize[0] + "").equals(s) | ("" + sleeveSize[0] + " ").equals(s)) {
                     sleeveQuantity[0] = sleeveQuantity[0] + quantity[i];
-                } else if (sleeveSize[1].equals(subStr[j]) | (" " + sleeveSize[1] + " ").equals(subStr[j]) | (" " + sleeveSize[1] + "").equals(subStr[j]) | ("" + sleeveSize[1] + " ").equals(subStr[j])) {
+                } else if (sleeveSize[1].equals(s) | (" " + sleeveSize[1] + " ").equals(s) | (" " + sleeveSize[1] + "").equals(s) | ("" + sleeveSize[1] + " ").equals(s)) {
                     sleeveQuantity[1] = sleeveQuantity[1] + quantity[i];
-                } else if (sleeveSize[2].equals(subStr[j]) | (" " + sleeveSize[2] + " ").equals(subStr[j]) | (" " + sleeveSize[2] + "").equals(subStr[j]) | ("" + sleeveSize[2] + " ").equals(subStr[j])) {
+                } else if (sleeveSize[2].equals(s) | (" " + sleeveSize[2] + " ").equals(s) | (" " + sleeveSize[2] + "").equals(s) | ("" + sleeveSize[2] + " ").equals(s)) {
                     sleeveQuantity[2] = sleeveQuantity[2] + quantity[i];
-                } else if (sleeveSize[3].equals(subStr[j]) | (" " + sleeveSize[3] + " ").equals(subStr[j]) | (" " + sleeveSize[3] + "").equals(subStr[j]) | ("" + sleeveSize[3] + " ").equals(subStr[j])) {
+                } else if (sleeveSize[3].equals(s) | (" " + sleeveSize[3] + " ").equals(s) | (" " + sleeveSize[3] + "").equals(s) | ("" + sleeveSize[3] + " ").equals(s)) {
                     sleeveQuantity[3] = sleeveQuantity[3] + quantity[i];
                 }
             }
@@ -24,8 +24,8 @@ public class SleeveCounting {
 
     public static double getCountSumm(double[] sleeveQuantity) {
         double summSleeveQuantity = 0.0;
-        for (int i = 0; i < sleeveQuantity.length; i++) {
-            summSleeveQuantity = summSleeveQuantity + sleeveQuantity[i];
+        for (double v : sleeveQuantity) {
+            summSleeveQuantity = summSleeveQuantity + v;
         }
         return summSleeveQuantity;
     }

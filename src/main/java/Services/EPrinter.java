@@ -25,8 +25,7 @@ public class EPrinter {
     }
 
     public static void print(double[] sleeveQuantity) {
-        for (int i = 0; i < sleeveQuantity.length; i++)
-            System.out.println(sleeveQuantity[i]);
+        for (double v : sleeveQuantity) System.out.println(v);
     }
 
     public static void printSumm(double sum) {

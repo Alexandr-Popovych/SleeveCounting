@@ -1,0 +1,23 @@
+Index: src/main/java/Services/SleeveCounting.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/Services/SleeveCounting.java	(revision 81a413b94b78d23b39e173b80e8afbc0ae665275)
++++ src/main/java/Services/SleeveCounting.java	(revision 9360652dbe28d96ebd167530fdbd864451c98f33)
+@@ -23,10 +23,11 @@
+     }
+ 
+     public static double getCountSumm(double[] sleeveQuantity) {
+-        double summSleeveQuantity = 0.0;
++        double sumSleeveQuantity;
++        sumSleeveQuantity = 0.0;
+         for (double v : sleeveQuantity) {
+-            summSleeveQuantity = summSleeveQuantity + v;
++            sumSleeveQuantity += v;
+         }
+-        return summSleeveQuantity;
++        return sumSleeveQuantity;
+     }
+ }
+\ No newline at end of file

@@ -1,4 +1,5 @@
 import Services.*;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -6,8 +7,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        Scanner scanner = new Scanner(System.in);
-        String way;
+        Scanner scanner = new Scanner(System.in);//Створюємо екземляр класу "Scanner" під іменем "scan" з аргументом "System.in" (укр."Системний ввід")
+        String way; //Створюємо
         way = FileChooser.fileChoose();
         System.out.println("Ви вказали шлях: " + "'" + way + " .");
         EPrinter.dashLineprint();

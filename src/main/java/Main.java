@@ -11,13 +11,13 @@ public class Main {
         String way; //Створюємо
         way = FileChooser.fileChoose();
         System.out.println("Ви вказали шлях: " + "'" + way + "'" + " .");
-        EPrinter.dashLineprint();
+        EPrinter.dashLinePrint();
         System.out.println("Введіть початковий номер рядка з фітінгами");
         int first = scanner.nextInt();
-        EPrinter.dashLineprint();
+        EPrinter.dashLinePrint();
         System.out.println("Введіть останній номер рядка з фітінгами");
         int last = scanner.nextInt();
-        EPrinter.dashLineprint();
+        EPrinter.dashLinePrint();
 
         int delta = last - first + 1;
 
@@ -35,10 +35,10 @@ public class Main {
         double[] sleeveQuantity = new double[5];
         SleeveCounting.count(designation, quantity, sleeveSize, sleeveQuantity);
         double countSum;
-        countSum = SleeveCounting.getCountSumm(sleeveQuantity);
+        countSum = SleeveCounting.getCountSum(sleeveQuantity);
 
         EPrinter.printSleeveSizeQuantity(sleeveSize, sleeveQuantity);
 
-        EPrinter.printSumm(countSum);
+        EPrinter.printSum(countSum);
     }
 }

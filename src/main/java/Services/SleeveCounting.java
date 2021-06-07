@@ -26,7 +26,7 @@ public class SleeveCounting {
         }
     }
 
-    public static double getCountSumm(double[] sleeveQuantity) {
+    public static double getCountSum(double[] sleeveQuantity) {
         double sumSleeveQuantity;
         sumSleeveQuantity = 0.0;
         for (double v : sleeveQuantity) {

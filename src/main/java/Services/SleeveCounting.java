@@ -18,6 +18,9 @@ public class SleeveCounting {
                     sleeveQuantity[2] = sleeveQuantity[2] + quantity[i];
                 } else if (sleeveSize[3].equals(s) | (" " + sleeveSize[3] + " ").equals(s) | (" " + sleeveSize[3] + "").equals(s) | ("" + sleeveSize[3] + " ").equals(s)) {
                     sleeveQuantity[3] = sleeveQuantity[3] + quantity[i];
+                } else if (sleeveSize[4].equals(s) | (" " + sleeveSize[4] + " ").equals(s) | (" " + sleeveSize[4] + "").equals(s) | ("" + sleeveSize[4] + " ").equals(s)) {
+                    sleeveQuantity[4] = sleeveQuantity[4] + quantity[i];
+
                 }
             }
         }

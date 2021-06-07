@@ -10,7 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);//Створюємо екземляр класу "Scanner" під іменем "scan" з аргументом "System.in" (укр."Системний ввід")
         String way; //Створюємо
         way = FileChooser.fileChoose();
-        System.out.println("Ви вказали шлях: " + "'" + way + " .");
+        System.out.println("Ви вказали шлях: " + "'" + way + "'" + " .");
         EPrinter.dashLineprint();
         System.out.println("Введіть початковий номер рядка з фітінгами");
         int first = scanner.nextInt();
@@ -31,8 +31,8 @@ public class Main {
         EPrinter.print(name, designation, quantity);
 
 
-        String[] sleeveSize = {"16", "20", "25", "32"};
-        double[] sleeveQuantity = new double[4];
+        String[] sleeveSize = {"10", "16", "20", "25", "32"};
+        double[] sleeveQuantity = new double[5];
         SleeveCounting.count(designation, quantity, sleeveSize, sleeveQuantity);
         double countSum;
         countSum = SleeveCounting.getCountSumm(sleeveQuantity);
